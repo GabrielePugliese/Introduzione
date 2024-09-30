@@ -1,5 +1,5 @@
  let c = 0
- let media
+ let perc
  
  let ans1 = prompt("1. Chi ha scritto la Divina Commedia?")
  while(ans1 === null) {
