@@ -93,8 +93,8 @@ let ans4 = prompt("4. Chi ha vinto il mondiale 2022?")
      alert("La risposta corretta era: limoni")
  }
  
- media = c*100/7
- console.log("Risposte corrette: " + c + " --> " + Math.floor(media) + "%")
+ perc = c*100/7
+ console.log("Risposte corrette: " + c + " --> " + Math.floor(perc) + "%")
  
 
 
