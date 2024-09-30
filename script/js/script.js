@@ -1,3 +1,10 @@
+function sanitize(input){
+    input=input.toLowerCase()
+    input=input.trim()
+
+    return input
+}
+
  let c = 0
  let perc
  
@@ -5,9 +12,7 @@
  while(ans1 === null) {
      ans1 = prompt("1. Chi ha scritto la Divina Commedia?")
  }
- 
- ans1 = ans1.toLowerCase()
- ans1 = ans1.trim()
+ ans1 = sanitize(ans1)
  
  if(ans1 === "dante") {
      c++
@@ -19,8 +24,7 @@
  while(ans2 === null) {
      ans2 = prompt("2. Capoluogo della Puglia")
  }
- ans2 = ans2.toLowerCase()
- ans2 = ans2.trim()
+ ans2 = sanitize(ans2)
  
  if(ans2 === "bari") {
      c++
@@ -32,8 +36,7 @@
  while(ans3 === null) {
      ans3 = prompt("3. Cosa c'è dopo il due")
  }
- ans3 = ans3.toLowerCase()
- ans3 = ans3.trim()
+ ans3 = sanitize(ans3)
  
  if(ans3 === "tre") {
      c++
@@ -45,8 +48,7 @@ let ans4 = prompt("4. Chi ha vinto il mondiale 2022?")
  while(ans4 === null) {
      ans4 = prompt("4. Chi ha vinto il mondiale 2022?")
  }
- ans4 = ans4.toLowerCase()
- ans4 = ans4.trim()
+ ans4 = sanitize(ans4)
  
  if(ans4 === "argentina") {
      c++
@@ -58,8 +60,7 @@ let ans4 = prompt("4. Chi ha vinto il mondiale 2022?")
  while(ans5 === null) {
      ans5 = prompt("5. Il migliore amico dell'uomo")
  }
- ans5 = ans5.toLowerCase()
- ans5 = ans5.trim()
+ ans5 = sanitize(ans5)
  
  if(ans5 === "cane") {
      c++
@@ -71,8 +72,7 @@ let ans4 = prompt("4. Chi ha vinto il mondiale 2022?")
  while(ans6 === null) {
      ans6 = prompt("6. Chi ha vinto Sanremo 2024?")
  }
- ans6 = ans6.toLowerCase()
- ans6 = ans6.trim()
+ ans6 = sanitize(ans6)
  
  if(ans6 === "angelina") {
      c++
@@ -84,8 +84,7 @@ let ans4 = prompt("4. Chi ha vinto il mondiale 2022?")
  while(ans7 === null) {
      ans7 = prompt("7. La limonata è fatti di?")
  }
- ans7 = ans7.toLowerCase()
- ans7 = ans7.trim()
+ ans7 = sanitize(ans7)
  
  if(ans7 === "limoni") {
      c++
@@ -95,6 +94,3 @@ let ans4 = prompt("4. Chi ha vinto il mondiale 2022?")
  
  perc = c*100/7
  console.log("Risposte corrette: " + c + " --> " + Math.floor(perc) + "%")
- 
-
-
