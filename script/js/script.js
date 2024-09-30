@@ -5,6 +5,14 @@ function sanitize(input){
     return input
 }
 
+function percentuale(input){
+    perc = c*100/7
+    console.log("Risposte corrette: " + c + " --> " + Math.floor(perc) + "%")
+
+    return perc
+
+}
+
  let c = 0
  let perc
  
@@ -92,5 +100,4 @@ let ans4 = prompt("4. Chi ha vinto il mondiale 2022?")
      alert("La risposta corretta era: limoni")
  }
  
- perc = c*100/7
- console.log("Risposte corrette: " + c + " --> " + Math.floor(perc) + "%")
+ percentuale()
